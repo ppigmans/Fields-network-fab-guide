@@ -1,0 +1,456 @@
+[{
+		"id": "fn_maingun_lt",
+		"name": "Main gun",
+		"origin": {
+			"type": "Class",
+			"name": "Light Tank",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can make 1 attack per two turns to account for the reloading",
+		"weapon_type": "Main Cannon",
+		"attack_bonus": [1],
+		"tags": [{
+				"id": "tg_blast",
+				"val": 1
+			},
+			{
+				"id": "tg_loading"
+			}
+		],
+		"damage": [{
+			"type": "Explosive",
+			"damage": [3,
+				3,
+				3
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	},
+	{
+		"id": "fn_T_mg",
+		"name": "Machine gun",
+		"origin": {
+			"type": "Auxiliary",
+			"name": "Military",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can make 1 attack per turn",
+		"weapon_type": "Auxiliary Machine Gun",
+		"attack_bonus": [1],
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [1, 1, 1]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	},
+	{
+		"id": "fn_era_plating",
+		"name": "ERA Plating",
+		"origin": {
+			"type": "Armour",
+			"name": "Military",
+			"base": false
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "The Tank receives +1 armour",
+		"bonus": {
+			"armor": 1
+		}
+	},
+	{
+		"id": "fn_heavy",
+		"name": "Heavy Tank frame",
+		"origin": {
+			"type": "Class",
+			"name": "Heavy Tank",
+			"base": true
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "The Tank may pick a single weapon from the HEAVY weapons list"
+	},
+	{
+		"id": "fn_hvt_maingun",
+		"name": "HEAVY Main gun",
+		"origin": {
+			"type": "Class",
+			"name": "Heavy Tank",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can make twice attack per two turns to account for the reloading",
+		"weapon_type": "Main Cannon",
+		"attack_bonus": [1],
+		"tags": [{
+				"id": "tg_blast",
+				"val": 2
+			},
+			{
+				"id": "tg_loading"
+			}
+		],
+		"damage": [{
+			"type": "Explosive",
+			"damage": [4,
+				4,
+				4
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	}, {
+		"id": "fn_hvt_energy",
+		"name": "HEAVY Energy Cannon",
+		"origin": {
+			"type": "Class",
+			"name": "Heavy Tank",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can make twice attack per two turns to account for the reloading",
+		"weapon_type": "Energy Cannon",
+		"attack_bonus": [1],
+		"tags": [{
+			"id": "tg_loading"
+		}],
+		"damage": [{
+			"type": "Energy",
+			"damage": [4,
+				4,
+				4
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	}, {
+		"id": "fn_hvt_gauss",
+		"name": "HEAVY Gauss Cannon",
+		"origin": {
+			"type": "Class",
+			"name": "Heavy Tank",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can make twice attack per two turns to account for the reloading",
+		"weapon_type": "Gauss Cannon",
+		"attack_bonus": [1],
+		"tags": [{
+			"id": "tg_loading"
+		}],
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [6,
+				6,
+				6
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	}, {
+		"id": "fn_hvt_quad",
+		"name": "HEAVY Quad Cannon",
+		"origin": {
+			"type": "Class",
+			"name": "Heavy Tank",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon is developed for Anti-air and anti-infantry purposes, it will not damage mech's... like... at all...",
+		"weapon_type": "Quad Cannon",
+		"attack_bonus": [1],
+		"tags": [{
+			"id": "tg_archaic"
+		}],
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [2,
+				2,
+				2
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	},
+	{
+		"id": "fn_apc",
+		"name": "Armoured personel carrier",
+		"origin": {
+			"type": "Class",
+			"name": "APC",
+			"base": true
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "This vehicle is capable of carrying a single squad, upon death of the unit, roll 1d10 to determain surviving squad members"
+	},
+	{
+		"id": "ss_mgt",
+		"name": "Spaceship Machine gun Turret",
+		"origin": {
+			"type": "Weapon",
+			"name": "Spaceship",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This turret is developed for use on Spaceships",
+		"weapon_type": "Machine gun",
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [5,
+				5,
+				5
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 40
+		}]
+	},
+	{
+		"id": "ss_mlt",
+		"name": "Spaceship Missile Launcher Turret",
+		"origin": {
+			"type": "Weapon",
+			"name": "Spaceship",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This turret is developed for use on Spaceships",
+		"weapon_type": "Missile Launcher",
+		"tags": [{
+			"id": "tg_blast",
+			"val": 2
+		}],
+		"damage": [{
+			"type": "Explosive",
+			"damage": [3,
+				3,
+				3
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 40
+		}]
+	},
+	{
+		"id": "ss_ship",
+		"name": "Spaceship",
+		"origin": {
+			"type": "Class",
+			"name": "Spaceship",
+			"base": true
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "This vehicle is considered a space worthy vessel"
+	},
+	{
+		"id": "ss_cnn",
+		"name": "Spaceship cannon",
+		"origin": {
+			"type": "Weapon",
+			"name": "Military",
+			"base": false
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "This vehicle can use Spaceship cannons"
+	},
+	{
+		"id": "ss_trt",
+		"name": "Spaceship Turrets",
+		"origin": {
+			"type": "Weapon",
+			"name": "Spaceship",
+			"base": true
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "This vehicle can use Spaceship turrets"
+	},
+	{
+		"id": "ss_ftc",
+		"name": "Spaceship Front cannon",
+		"origin": {
+			"type": "Weapon",
+			"name": "Spaceship",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This Cannon is developed for use on Spaceships",
+		"weapon_type": "Superheavy Cannon",
+		"tags": [{
+				"id": "tg_blast",
+				"val": 3
+			},
+			{
+				"id": "tg_loading"
+			}
+		],
+		"damage": [{
+			"type": "Explosive",
+			"damage": [5,
+				5,
+				5
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 50
+		}]
+	},
+	{
+		"id": "ss_bsc",
+		"name": "Spaceship Broadside cannon",
+		"origin": {
+			"type": "Weapon",
+			"name": "Spaceship",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This Cannon is developed for use on Spaceships",
+		"weapon_type": "Superheavy Cannon",
+		"tags": [{
+				"id": "tg_blast",
+				"val": 3
+			},
+			{
+				"id": "tg_loading"
+			}
+		],
+		"damage": [{
+			"type": "Explosive",
+			"damage": [5,
+				5,
+				5
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 50
+		}]
+	},
+	{
+		"id": "fn_pll",
+		"name": "Plasma Lance",
+		"origin": {
+			"type": "Weapon",
+			"name": "Military",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "At T2-3, this weapon can make two attacks at once, hitting one character twice or two characters once.",
+		"weapon_type": "Main Cannon",
+		"damage": [{
+			"type": "energy",
+			"damage": [4,
+				4,
+				6
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 10
+		}]
+	}, {
+		"id": "fn_shield",
+		"name": "HEAVY FNET SHIELD",
+		"origin": {
+			"type": "Class",
+			"name": "GUARDIAN",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "",
+		"tags": [{
+			"id": "tg_knockback",
+			"val": 1
+		}],
+		"weapon_type": "Heavy Melee",
+		"attack_bonus": [
+			1,
+			2,
+			3
+		],
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [
+				3,
+				6,
+				9
+			]
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": 1
+		}],
+		"on_hit": ""
+	},
+	{
+		"id": "fn_fortress",
+		"name": "FORTRESS",
+		"origin": {
+			"type": "Class",
+			"name": "GUARDIAN",
+			"base": true
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "Allied characters can use the Bastion for hard cover.",
+		"tags": []
+	},
+	{
+		"id": "fn_ciws",
+		"name": "Gatling Cannon",
+		"origin": {
+			"type": "Weapon",
+			"name": "Military",
+			"base": true
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can make two attacks at once, hitting one character twice or two characters once.",
+		"weapon_type": "Main Cannon",
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [5,
+				5,
+				5
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 8
+		}]
+	}
+]

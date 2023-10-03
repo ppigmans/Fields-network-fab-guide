@@ -1,0 +1,230 @@
+[{
+		"id": "fn_LT",
+		"name": "Light Tank",
+		"role": "tank",
+		"info": {
+			"flavor": "A small threaded vehicle, often seen as the predecessor of the Mech frame, this being a light version of said vehicle.",
+			"tactics": ""
+		},
+		"stats": {
+			"armor": [1, 1, 1],
+			"hp": [4, 4, 4],
+			"evade": [5, 5, 5],
+			"edef": [5, 5, 5],
+			"heatcap": [2, 2, 2],
+			"speed": [5, 5, 5],
+			"sensor": [10, 10, 10],
+			"save": [10, 12, 14],
+			"hull": [2, 2, 2],
+			"agility": [3, 4, 6],
+			"systems": [1, 2, 3],
+			"engineering": [0, 1, 1],
+			"size": [
+				[1],
+				[1],
+				[1]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": [
+			"fn_maingun_lt",
+			"fn_T_mg"
+		],
+		"optional_features": ["fn_era_plating"],
+		"power": 100
+	},
+	{
+		"id": "fn_HVT",
+		"name": "Heavy Tank",
+		"role": "tank",
+		"info": {
+			"flavor": "A large threaded vehicle, often seen as the predecessor of the Mech frame, this being a heavy version of said vehicle.",
+			"tactics": ""
+		},
+		"stats": {
+			"armor": [2, 2, 2],
+			"hp": [6, 6, 6],
+			"evade": [5, 5, 5],
+			"edef": [5, 5, 5],
+			"heatcap": [2, 2, 2],
+			"speed": [3, 3, 3],
+			"sensor": [10, 10, 10],
+			"save": [10, 12, 14],
+			"hull": [2, 2, 2],
+			"agility": [3, 4, 6],
+			"systems": [1, 2, 3],
+			"engineering": [0, 1, 1],
+			"size": [
+				[1],
+				[1],
+				[1]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["fn_era_plating", "fn_heavy"],
+		"optional_features": ["fn_hvt_maingun", "fn_hvt_energy", "fn_hvt_gauss", "fn_hvt_quad", "fn_T_mg"],
+		"power": 100
+	},
+	{
+		"id": "fn_tt",
+		"name": "Troop transport",
+		"role": "tank",
+		"info": {
+			"flavor": "A large armoured vehicle capable of transporting a squad of infantry at high speed.",
+			"tactics": ""
+		},
+		"stats": {
+			"armor": [0, 0, 0],
+			"hp": [4, 4, 4],
+			"evade": [5, 5, 5],
+			"edef": [5, 5, 5],
+			"heatcap": [2, 2, 2],
+			"speed": [8, 8, 8],
+			"sensor": [10, 10, 10],
+			"save": [10, 12, 14],
+			"hull": [2, 2, 2],
+			"agility": [3, 4, 6],
+			"systems": [1, 2, 3],
+			"engineering": [0, 1, 1],
+			"size": [
+				[1],
+				[1],
+				[1]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["fn_T_mg", "fn_apc"],
+		"optional_features": ["fn_era_plating"],
+		"power": 100
+	}, 
+	{
+		"id": "ss_int",
+		"name": "Interceptor",
+		"role": "ship",
+		"info": {
+			"flavor": "A basic interceptor, high speed, low damage, nothing more to say.",
+			"tactics": ""
+		},
+		"stats": {
+			"armor": [0, 0, 0],
+			"hp": [25, 25, 25],
+			"evade": [10, 10, 10],
+			"edef": [9, 9, 9],
+			"heatcap": [8, 8, 8],
+			"speed": [0, 0, 0],
+			"sensor": [10, 10, 10],
+			"hull": [2, 2, 2],
+			"save": [10, 10, 10],
+			"agility": [2, 2, 2],
+			"systems": [2, 2, 2],
+			"engineering": [2, 2, 2],
+			"size": [
+				[4],
+				[4],
+				[4]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["ss_trt"],
+		"optional_features": ["ss_mgt", "ss_mlt"],
+		"power": 100
+	},
+	{
+		"id": "ss_drp",
+		"name": "Dropship",
+		"role": "ship",
+		"info": {
+			"flavor": "Dropship for Mechs.",
+			"tactics": ""
+		},
+		"stats": {
+			"armor": [5, 5, 5],
+			"hp": [40, 40, 40],
+			"evade": [15, 15, 15],
+			"edef": [12, 12, 12],
+			"heatcap": [10, 10, 10],
+			"speed": [10, 10, 10],
+			"sensor": [10, 10, 10],
+			"hull": [4, 4, 4],
+			"save": [10, 10, 10],
+			"agility": [2, 2, 2],
+			"systems": [2, 2, 2],
+			"engineering": [2, 2, 2],
+			"size": [
+				[5],
+				[5],
+				[5]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["ss_trt", "ss_cnn"],
+		"optional_features": ["ss_mgt", "ss_mlt", "ss_bsc", "ss_ftc"],
+		"power": 100
+	},
+	{
+		"id": "fn_guardian",
+		"name": "Guardian",
+		"role": "defender",
+		"info": {
+			"flavor": "The Fields Network Guardian class Mech, a alternative to the heavy 'DUCK' mech, it being a defender mech, doesn't just mean that it's a walking shield, the Guardian has a heavy Plasma lance to protect itself, as they say, the best defense is a good offense!",
+			"tactics": "Like the Bastion, Guardians are hardy defenders that use their bulk and size to protect themselves and nearby friendly forces"
+		},
+		"stats": {
+			"armor": [3, 3, 4],
+			"hp": [10, 10, 12],
+			"evade": [8, 9, 10],
+			"edef": [8, 8, 8],
+			"structure": [2, 2, 2],
+			"heatcap": [8, 8, 10],
+			"speed": [4, 4, 4],
+			"sensor": [5, 7, 10],
+			"hull": [2, 4, 8],
+			"save": [8, 10, 12],
+			"agility": [-3, -2, -1],
+			"systems": [0, 0, 1],
+			"engineering": [2, 3, 4],
+			"size": [
+				[2],
+				[2],
+				[2]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["fn_pll", "fn_shield", "fn_fortress"],
+		"optional_features": [""],
+		"power": 100
+	},
+	{
+		"id": "fn_phalanx",
+		"name": "Phalanx",
+		"role": "defender",
+		"info": {
+			"flavor": "A Fnet exclusive base defense mech, more like a sentry gun then a mech.",
+			"tactics": "Have a couple of these guys guarding the front of your base, and you will be golden"
+		},
+		"stats": {
+			"armor": [2, 2, 4],
+			"hp": [8, 8, 10],
+			"evade": [8, 9, 10],
+			"edef": [8, 8, 8],
+			"structure": [1, 2, 2],
+			"heatcap": [8, 8, 10],
+			"speed": [4, 4, 4],
+			"sensor": [5, 7, 10],
+			"hull": [2, 4, 8],
+			"save": [8, 10, 12],
+			"agility": [-3, -2, -1],
+			"systems": [0, 0, 1],
+			"engineering": [2, 3, 4],
+			"size": [
+				[2],
+				[2],
+				[2]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["fn_ciws"],
+		"optional_features": [""],
+		"power": 100
+	}
+	]

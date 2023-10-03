@@ -1,0 +1,9 @@
+{
+	"name": "Fields Network - NPC",
+	"author": "Patrick Pigmans",
+	"item_prefix": "FNPC",
+	"version": "0.0.2",
+	"website": "https://fields-network.itch.io/fnet",
+	"image_url": "https://cdn.discordapp.com/attachments/239096538729545740/746156686749859994/unknown.png",
+	"description": "NPC Addon for FNET"
+}

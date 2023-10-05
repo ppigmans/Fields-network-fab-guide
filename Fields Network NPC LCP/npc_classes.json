@@ -66,6 +66,38 @@
 		"power": 100
 	},
 	{
+		"id": "fn_fighter",
+		"name": "Fighter Jet",
+		"role": "ship",
+		"info": {
+			"flavor": "A large threaded vehicle, often seen as the predecessor of the Mech frame, this being a heavy version of said vehicle.",
+			"tactics": ""
+		},
+		"stats": {
+			"armor": [0, 0, 0],
+			"hp": [2, 2, 2],
+			"evade": [10, 10, 10],
+			"edef": [4, 4, 4],
+			"heatcap": [2, 2, 2],
+			"speed": [10, 10, 10],
+			"sensor": [10, 10, 10],
+			"save": [10, 12, 14],
+			"hull": [2, 2, 2],
+			"agility": [3, 4, 6],
+			"systems": [1, 2, 3],
+			"engineering": [0, 1, 1],
+			"size": [
+				[1],
+				[1],
+				[1]
+			],
+			"activations": [1, 1, 1]
+		},
+		"base_features": ["fn_fpln"],
+		"optional_features": ["fn_fighter_railgun", "fn_fighter_missile", "fn_fighter_autogun"],
+		"power": 100
+	},
+	{
 		"id": "fn_tt",
 		"name": "Troop transport",
 		"role": "tank",

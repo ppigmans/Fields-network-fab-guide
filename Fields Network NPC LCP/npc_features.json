@@ -81,6 +81,104 @@
 		"effect": "The Tank may pick a single weapon from the HEAVY weapons list"
 	},
 	{
+		"id": "fn_fpln",
+		"name": "Fighter plane",
+		"origin": {
+			"type": "Class",
+			"name": "Fighter",
+			"base": true
+		},
+		"locked": false,
+		"type": "Trait",
+		"effect": "The Fighter may pick a single weapon from the FIGHTER weapons list"
+	},
+	{
+		"id": "fn_fighter_railgun",
+		"name": "FIGHTER Railgun",
+		"origin": {
+			"type": "Class",
+			"name": "Railgun",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "This weapon can attack once per two turns to account for reloading, this weapon can fire at two different targets",
+		"weapon_type": "Main Cannon",
+		"attack_bonus": [1],
+		"tags": [{
+				"id": "tg_loading"
+			}
+		],
+		"damage": [{
+			"type": "Energy",
+			"damage": [4,
+				4,
+				4
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 5
+		}]
+	},	
+    {
+		"id": "fn_fighter_missile",
+		"name": "FIGHTER Missiles",
+		"origin": {
+			"type": "Class",
+			"name": "Fighter",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "FOX 2! - can fire two missiles at two target within range",
+		"weapon_type": "Autocannon",
+		"attack_bonus": [1],
+		"tags": [{
+			"id": "tg_blast",
+			"val": 1
+		}],
+		"damage": [{
+			"type": "Explosive",
+			"damage": [2,
+				2,
+				2
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 6
+		}]
+	},
+    {
+		"id": "fn_fighter_autogun",
+		"name": "FIGHTER Autocannon",
+		"origin": {
+			"type": "Class",
+			"name": "Fighter",
+			"base": false
+		},
+		"locked": false,
+		"type": "Weapon",
+		"effect": "'BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT'",
+		"weapon_type": "Autocannon",
+		"attack_bonus": [1],
+		"tags": [{
+			"id": "tg_archaic"
+		}],
+		"damage": [{
+			"type": "Kinetic",
+			"damage": [2,
+				2,
+				2
+			]
+		}],
+		"range": [{
+			"type": "Range",
+			"val": 6
+		}]
+	},
+	{
 		"id": "fn_hvt_maingun",
 		"name": "HEAVY Main gun",
 		"origin": {

@@ -1,0 +1,9 @@
+{
+  "name": "FNET ACES FRAMES",
+  "author": "Patrick Pigmans",
+  "description": "Addition to Fields network fabrication guide.",
+  "item_prefix": "FNA",
+  "version": "0.1",
+  "image_url": "https://raw.githubusercontent.com/ppigmans/Fields-network-fab-guide/main/Logos/FNET2.svg",
+  "website": "https://github.com/ppigmans/Fields-network-fab-guide/tree/main"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Ladd_reddot_targeting_laser",
+    "name": "Red Dot Targeting Laser",
+    "mount": "Main",
+    "type": "Rifle",
+    "sp": 1,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "FNA",
+    "license": "Ladd",
+    "license_level": 1,
+    "on_hit": "DRONE, SEEKING, and NEXUS weapons and systems gain +1 Accuracy to attack the target until the end of their next turn.",
+    "on_crit": "The target also receives Lock On.",
+    "description": "A red dot sight is a type of optic that is typically used at closer ranges, normally around 100 yards or less... 'Typically'... this ain't a red dot sight... - FNET Engineer (on why the name change from blackspot to red dot) ",
+    "data_type": "weapon",
+    "license_id": "FNA_LADD"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "FNET_mods_focussing_crystal",
+    "name": "Focussing Crystal",
+    "source": "FN_",
+    "license": "Scorpion Relic Frame",
+    "license_id": "FNET_frames_scorpion_relic_frame",
+    "license_level": 3,
+    "sp": "0",
+    "description": "",
+    "allowed_types": [
+      "Cannon"
+    ],
+    "allowed_sizes": [
+      "Heavy"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [
+      {
+        "type": "Heat",
+        "val": 1
+      }
+    ],
+    "added_range": [],
+    "actions": [
+      {
+        "name": "Activate Focussing Crystal",
+        "activation": "Free",
+        "detail": "<div>Activating the Focussing Crystal allows additional heat to be generated upon impacting the target</div>",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Heat",
+            "val": 1
+          }
+        ],
+        "synergy_locations": [
+          "active_effects"
+        ],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  }
+]

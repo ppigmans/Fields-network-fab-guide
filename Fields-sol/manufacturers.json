@@ -1,0 +1,38 @@
+[
+  {
+    "id": "NDC",
+    "name": "Nova Dynamics Corporation",
+    "light": "#F2F2F2",
+    "dark": "#222831",
+    "logo_url": "https://raw.githubusercontent.com/massif-press/compcon/89df87bdb327fb901aa7200c84fb3e8fb0ef6fb6/public/static/img/logo/gms.svg",
+    "quote": "<div><em>Nova Dynamics: Speed, Precision, Dominance.</em></div>",
+    "description": "<div>Nova Dynamics is A cutting-edge robotics company specializing in the creation of highly mobile mechs known as Lancers. With a focus on advanced technology and innovative designs, Nova Dynamics has established a reputation for excellence in the industry. Their partnership with the enigmatic Fields Network has fueled their groundbreaking research and development, leading to the creation of the powerful and versatile Lancer line.</div>"
+  },
+  {
+    "id": "KMC",
+    "name": "Knights Manufacturing",
+    "light": "#106B68",
+    "dark": "#0D948F",
+    "logo_url": "https://raw.githubusercontent.com/ppigmans/Fields-network-fab-guide/main/Logos/FNET-KM.svg",
+    "quote": "<div>Our weapons are the unknown, our victories are absolute.</div>",
+    "description": "<div>Knights Manufacturing, a clandestine subsidiary of the Fields Network Corporation, is infamous for its elusive Mental Frames. These enigmatic Lancer frames, rumored to be powered by the mysterious substance Floatine, have never been officially seen in public.<br><br> The existence of Mental Frames is a subject of speculation and conspiracy theories. Some claim that they are prototypes used for covert military operations, while others believe they are experimental devices being developed for unknown purposes. The scarcity of information surrounding Mental Frames has only fueled their mystique and the desire to obtain one. <br><br> Those who have encountered Mental Frames in secret operations or clandestine exchanges describe them as possessing extraordinary abilities and performance characteristics. However, the true nature of their capabilities remains a closely guarded secret, known only to a select few within Knights Manufacturing and the Fields Network Corporation. </div>"
+  },  
+  {
+    "id": "BA",
+    "name": "Blackspire Arms",
+    "light": "#FF6B00",
+    "dark": "#ff5733",
+    "logo_url": "https://raw.githubusercontent.com/ppigmans/Fields-network-fab-guide/main/Logos/FNET-HA.svg",
+    "quote": "<div>Forge the Future, Fuel the Flame.</div>",
+    "description": "<div>Blackspire Arms was once a prominent subsidiary of Harrison Armory, a renowned weapons manufacturer with a long history of providing armaments to the Union's military. Blackspire Arms specialized in the development and production of advanced weaponry, including weapons of mass destruction (WMDs).<br><br> Their partnership with Harrison Armory gave them access to vast resources and cutting-edge technology, enabling them to create some of the most powerful weapons of their time. However, their involvement in the production of WMDs eventually led to their downfall. When one of their WMDs was used by the infamous Fields Network to destroy an entire asteroid station, the Union's Committee imposed a strict ban on Blackspire Arms. <br><br> Despite the ban, rumors persist that Blackspire Arms has not completely abandoned its operations. Some speculate that they have gone underground, continuing to produce weapons in secret. Others claim that they have formed a clandestine partnership with the Fields Network, providing them with the expertise and technology needed to create even more powerful WMDs. <br><br> One particularly concerning rumor suggests that Blackspire Arms has gained access to Floatine, a rare and highly volatile substance that can be used to enhance the destructive capabilities of weapons. With Floatine at their disposal, Blackspire Arms could potentially create WMDs of unprecedented power, posing a grave threat to the Union's stability. </div>"
+  },
+  {
+    "id": "PS",
+    "name": "Poseidon Shipworks",
+    "light": "#FFD700",
+    "dark": "#FFD700",
+    "logo_url": "https://raw.githubusercontent.com/ppigmans/Fields-network-fab-guide/main/Logos/FNET-PS.svg",
+    "quote": "<div>Beneath the stars, we forge the future.</div>",
+    "description": "<div>Poseidon Shipworks is a prominent shipbuilding company operating within the Kuiper asteroid belt. As a subsidiary of the influential Fields Network, it enjoys substantial subsidies and resources, enabling it to produce cutting-edge vessels.<br><br> One of Poseidon Shipworks' most notable features is its integration of Floatine, a valuable resource controlled by the Fields Network. Floatine, known for its unique properties and applications, is incorporated into the company's ships, enhancing their performance and capabilities. This strategic partnership grants Poseidon Shipworks a significant advantage in the shipbuilding industry. <br><br> While the company has produced a variety of vessels, its lighter ships have gained particular notoriety. These ships have been utilized by pirate groups to disrupt IPS-N shipping lanes, causing significant economic losses and instability. The ships' advanced design and integration of Floatine technology make them difficult to detect and intercept, posing a serious threat to maritime security. <br><br>There is a persistent rumor that communications often fail when a Poseidon Shipworks vessel is spotted. This mysterious phenomenon has led to speculation about the ship's capabilities and the potential involvement of advanced technology or weaponry. </div>"
+  }
+]

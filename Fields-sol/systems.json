@@ -1,212 +1,32 @@
 [
   {
-    "id": "FNET_systems_falcon_drone",
-    "name": "Falcon Drone",
-    "source": "FN_",
-    "license": "Scorpion Relic Frame",
-    "license_id": "FNET_frames_scorpion_relic_frame",
-    "license_level": 1,
-    "effect": "<div>Deploys a Falcon flyer attack drone</div>",
-    "type": "Deployable",
-    "sp": "2",
-    "description": "<div>Deploy a Falcon flyer attack drone</div>",
-    "deployables": [
-      {
-        "name": "Falcon",
-        "type": "Drone",
-        "detail": "<div>Once a round, the Falcon can attack a target within 10 range with 1d3 Energy</div>",
-        "size": 0.5,
-        "activation": "Full",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
-        "instances": 1,
-        "cost": 1,
-        "armor": "0",
-        "hp": "5",
-        "evasion": "10",
-        "edef": "10",
-        "heatcap": "0",
-        "repcap": "0",
-        "sensor_range": "0",
-        "tech_attack": "0",
-        "save": "0",
-        "speed": "5",
-        "pilot": false,
-        "mech": false
-      }
-    ]
-  },
-  {
-    "id": "FNET_systems_stronghold",
-    "name": "Stronghold",
-    "source": "FN_",
-    "license": "Duck",
-    "license_id": "FNET_frames_duck",
-    "license_level": 2,
-    "effect": "<div>Expend a charge to deploy a Size 1 shield generator in a free, adjacent space, where it creates a burst 1 shield.</div>",
-    "type": "Deployable",
-    "sp": "2",
-    "description": "",
+    "id": "BA_FNL",
+    "name": "Funnel",
+    "source": "BA",
+    "license": "",
+    "license_id": "",
+    "effect": "<div>Pew.</div>",
+    "type": "Drone",
+    "sp": "0",
+    "description": "<div>Installs a Laser Duck Unit on the FRAME, a drone capable of burst firing lasers. It looks like a flying rubber duck, if you gave it a big pylon on the back of the head alongside thrusters and high intensity energy beams on its eyes and mouth.</div>",
     "tags": [
       {
-        "id": "tg_unique",
-        "name": "UNIQUE",
-        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+        "id": "tg_range",
+        "name": "RANGE ({VAL})",
+        "description": "This system can be activated at a range of {VAL} spaces.",
+        "filter_ignore": true,
+        "val": 3
       },
       {
-        "id": "tg_limited",
-        "name": "LIMITED {VAL}",
-        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 1
+        "id": "tg_accurate",
+        "name": "ACCURATE",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
       },
       {
-        "id": "tg_deployable",
-        "name": "DEPLOYABLE",
-        "description": "This system is an object that can be deployed on the field. Unless otherwise specified, it can be deployed in an adjacent, free and valid space as a quick action, and has 5 Evasion and 10 HP per Size."
-      },
-      {
-        "id": "tg_quick_action",
-        "name": "QUICK ACTION",
-        "description": "This system requires a quick action to Activate."
-      }
-    ],
-    "deployables": [
-      {
-        "name": "STRONGHOLD SHIELD GENERATOR",
-        "type": "Shield",
-        "detail": "<div>Set out three d6s to represent the generator’s remaining power. As a reaction when any character or object of your choice at least partly in the area takes damage, you may roll one of the d6s to reduce the damage by the amount rolled.<br>This effect lasts for the rest of the scene, until all dice have been rolled and the generator loses power, or the generator is destroyed.</div>",
-        "size": 1,
-        "activation": "Quick",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
-        "instances": 1,
-        "cost": 1,
-        "armor": "",
-        "hp": "10",
-        "evasion": "5",
-        "edef": "",
-        "heatcap": "",
-        "repcap": "",
-        "sensor_range": "",
-        "tech_attack": "",
-        "save": "",
-        "speed": "",
-        "pilot": false,
-        "mech": false
+        "id": "tg_drone",
+        "name": "DRONE",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone  hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones  persist for the rest of the scene, until destroyed, or until otherwise specified."
       }
     ]
-  },
-  {
-    "id": "FNET_systems_cosmonaut_shield",
-    "name": "Cosmonaut Shield",
-    "source": "FN_",
-    "license": "Duck",
-    "license_id": "FNET_frames_duck",
-    "license_level": 1,
-    "effect": "<div>You use the heavy overarm Cosmonaut Shield to provide cover for an adjacent character as a quick action. giving them Resistance to all damage; however, you take half of the damage your target would take before calculating Armor and Resistance. This effect lasts until your target breaks adjacency, at which point this effect ceases until you repeat this action.</div>",
-    "type": "System",
-    "sp": "2",
-    "description": "<div>In space, simplicity in form and function guarantees reliability and promotes trust. The Cosmonaut is one of FNET’s oldest designs, hailing from the days of FNET's Military teams. It’s a simple slab of metal with high explosive charges carried in hand or mounted on a chassis’ brachial superstructure; the only option a pilot has for customizing this shield is a choice of size.</div>",
-    "tags": [
-      {
-        "id": "tg_unique",
-        "name": "UNIQUE",
-        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
-      },
-      {
-        "id": "tg_quick_action",
-        "name": "QUICK ACTION",
-        "description": "This system requires a quick action to Activate."
-      }
-    ]
-  },
-  {
-    "id": "FNET_systems_astronaut",
-    "name": "Astronaut",
-    "source": "FN_",
-    "license": "Trooper",
-    "license_id": "FNET_frames_trooper",
-    "license_level": 2,
-    "effect": "<div>You use the heavy overarm Astronaut Shield to provide cover for an adjacent character as a quick action. giving them Resistance to all damage; however, you take half of the damage your target would take before calculating Armor and Resistance. This effect lasts until your target breaks adjacency, at which point this effect ceases until you repeat this action.</div>",
-    "type": "Shield",
-    "sp": "2",
-    "description": "<div>In space, simplicity in form and function guarantees reliability and promotes trust. The Astronaut is one of FNET’s oldest designs, hailing from the days of FNET's Military teams. It’s a simple slab of metal with high explosive charges carried in hand or mounted on a chassis’ brachial superstructure; the only option a pilot has for customizing this shield is a choice of size.</div>",
-    "tags": [
-      {
-        "id": "tg_unique",
-        "name": "UNIQUE",
-        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
-      },
-      {
-        "id": "tg_quick_action",
-        "name": "QUICK ACTION",
-        "description": "This system requires a quick action to Activate."
-      }
-    ]
-  },
-  {
-    "id": "FN_H",
-    "name": "Hex-Class NHP",
-    "source": "FN_",
-    "license": "Mosquito",
-    "license_id": "FN_M",
-    "license_level": 3,
-    "type": "AI",
-    "sp": "",
-    "description": "",
-    "tags": [
-      {
-        "id": "tg_ai",
-        "name": "AI",
-        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
-      },
-      {
-        "id": "tg_unique",
-        "name": "UNIQUE",
-        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
-      },
-      {
-        "id": "tg_round",
-        "name": "{VAL}/ROUND",
-        "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user’s turn and the start of their next turn.",
-        "val": 2
-      },
-      {
-        "id": "tg_full_tech",
-        "name": "FULL TECH",
-        "description": "This tech can be used as a Full Tech Action"
-      },
-      {
-        "id": "tg_reaction",
-        "name": "REACTION",
-        "description": "This system can be activated as a reaction."
-      }
-    ],
-    "actions": [
-      {
-        "name": "BEND PROBABILITY",
-        "activation": "Full",
-        "detail": "<div>Roll 2d20 and note the results: X and Y. These numbers are lost at the end of your next turn. Gain the Probabilistic Cannibalism reaction until the end of your next turn.</div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
-      },
-      {
-        "name": "PROBABILISTIC CANNIBALISM",
-        "activation": "Reaction",
-        "detail": "<div>Effect: Choose X or Y. That number immediately becomes the result of the roll.<br>This reaction can be used no more than two times before the start of your next turn.</div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "2/round",
-        "init": "",
-        "trigger": "<div>You or any other character within Sensors would roll a d20</div>"
-      }
-    ]
-  }
-]
+   }
+  ]

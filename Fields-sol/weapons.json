@@ -176,5 +176,48 @@
 	    "max": 7
 	}
 	]
+  },
+  {
+    "id": "KMC_HLBC",
+    "name": "Holy Light Beam Cannon",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+4"
+      },
+      {
+      	"type": "Burn",
+      	"val": 5
+      }	
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+      	"id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "KMC",
+    "license": "Glahad Mental Frame",
+    "license_level": 3,
+    "description": "The Holy Light Beam Cannon - otherwise known as Holy light or HLBC, is a testament to Knights Manufacturing's ambition, presenting the pinnacle of the limited energy weapon development KM has performed.<br>Going with the trend of old Cradle Arthurian legends, the HLBC is mean to inspire awe, fear and evoke the image of divine retribution.  The charging sequence of the HLBC is a spectacle on its own, as energy seemingly comes out of nowhere (while in reality it is being released through tiny spikes on the capacitor units), quickly filling the firing chamber with a shining, golden light, adding to the sense of imagery of a divine weapon.  Once a weapon that was often used to protect the population of KM factory worlds, now has become twisted, used by Fields Network to perform deeds beyond reasoning.",
+    "license_id": "KMC_Frames_Galahad"
   }
-]
+ ]
+

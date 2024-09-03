@@ -1,296 +1,49 @@
 [
   {
-    "id": "FNET_frames_scorpion_relic_frame",
-    "license_id": "FNET_frames_scorpion_relic_frame",
-    "source": "FN_",
+    "id": "KMC_Frames_Galahad",
+    "license_id": "KMC_Frames_Galahad",
+    "source": "KMC",
     "license_level": 2,
-    "name": "Scorpion Relic Frame",
+    "name": "Galahad Mental Frame",
     "mechtype": [
-      "Artillery"
+      "Striker"
     ],
     "variant": "",
-    "description": "<div>A Relic from the Anthropocene, recovered at a undisclosed location by Fields Network Operatives, its design was copied, allowing Fields Network to sell cheaply fabricated mech's at a smaller cost then its competitors.</div>",
+    "description": "<div>The Galahad frame represents the pinnacle of Knights Manufacturing's psycho-neural interface technology. It doesn't merely connect to a pilot's mind; it merges with it, fostering a symbiotic relationship where the line between machine and pilot blurs.</div>",
     "mounts": [
-      "Heavy",
-      "Main",
-      "Main"
+      "Flex",
+      "Flex",
+      "Heavy"
     ],
     "stats": {
-      "size": 2,
-      "structure": 2,
+      "size": 1,
+      "structure": 4,
       "stress": 4,
       "armor": 1,
-      "hp": 12,
-      "evasion": 4,
-      "edef": 6,
-      "heatcap": 4,
-      "repcap": 4,
-      "sensor_range": 10,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 8,
       "tech_attack": 0,
-      "save": 12,
-      "speed": 3,
-      "sp": 6
+      "save": 10,
+      "speed": 5,
+      "sp": 5
     },
     "traits": [],
     "core_system": {
       "name": "Relic system - Armour up",
       "active_name": "Armour up",
-      "active_effect": "<p>Upon activation gives the Frame a additional layer of armour at the cost of one evasion level</p>",
+      "active_effect": "<p>On activation the pilot initiates a full psycho-neural sync with the Galahad's onboard NHP. This creates a temporary state of unified consciousness, merging the pilot's tactical acumen with the NHP's lightning-fast reflexes and combat instincts. </br> Activating the core system will generate 2 heat, </br> For RP purposes, please add +1 to your custom counter laballed - mental state</p>",
       "activation": "Protocol",
-      "description": "<p>The Relic system \"Armour up\" gives the frame a additional layer of armour at the cost one evasion level per activation</p>",
+      "description": "<p>By merging consciousness with the onboard AI, the pilot unlocks a state of perfect synchronicity, granting the mech unparalleled combat prowess, heightened sensory awareness, and unmatched agility. However, this profound connection leaves a lingering toll on the pilot's mind, requiring both physical and mental recovery, Activating the core system will generate 2 heat, </br> For RP purposes, please add +1 to your custom counter laballed - mental state.</p>",
       "deactivation": null,
-      "use": "Turn",
-      "active_actions": [],
-      "active_bonuses": [
-        {
-          "id": "armor",
-          "val": 1,
-          "damage_types": [],
-          "range_types": [],
-          "weapon_types": [],
-          "weapon_sizes": [],
-          "overwrite": false,
-          "replace": false
-        },
-        {
-          "id": "evasion",
-          "val": -1,
-          "damage_types": [],
-          "range_types": [],
-          "weapon_types": [],
-          "weapon_sizes": [],
-          "overwrite": false,
-          "replace": false
-        }
-      ],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/1141829553254310058/1143205430399598623/Retrograde-Minis-Homebrew-MFR-MOI-PTOLEMY_1.png",
-    "y_pos": 0
-  },
-  {
-    "id": "FNET_frames_duck",
-    "license_id": "FNET_frames_duck",
-    "source": "FN_",
-    "license_level": 2,
-    "name": "Duck",
-    "mechtype": [
-      "Defender"
-    ],
-    "variant": "",
-    "description": "<div>The Duck, FNET's first foray into custom build military-grade mech design, is the backbone of many proactive security or PMC forces.<br><br>Its massive, humaniod frame is built around a repurposed and reinforced tank hull to handle sustained fire and the vagaries of vessel-proximal hardvac travel.<br><br>The duck is a imposing chassis, its frame evoking the might of ancient armored vehicles from a time when greater numbers guaranteed victory.<br><br>The standard issue license for the FNET Duck outfits each chassis with a FNET (name pending here) cannon for supressing and overwhelming targets, a ERA heavy explosive shield for defense.</div>",
-    "mounts": [
-      "Main",
-      "Main",
-      "Heavy"
-    ],
-    "stats": {
-      "size": 2,
-      "structure": 4,
-      "stress": 4,
-      "armor": 3,
-      "hp": 10,
-      "evasion": 5,
-      "edef": 5,
-      "heatcap": 5,
-      "repcap": 5,
-      "sensor_range": 10,
-      "tech_attack": 0,
-      "save": 10,
-      "speed": 3,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "HEAVY FRAME",
-        "use": "",
-        "description": "<div>The Duck cannot be pushed, pulled, knocked prone, or knocked back by smaller characters</div>"
-      },
-      {
-        "name": "ERA PLATING",
-        "use": "",
-        "description": "<div>The Duck has Resistance to damage, burn and heat from blast, burst, line, and cone attacks.</div>"
-      },
-      {
-        "name": "FAT",
-        "use": "",
-        "description": "<div>The Duck is fat, receiving a +1 difficulty on Agility checks and saves</div>"
-      },
-      {
-        "name": "PROTECTOR",
-        "use": "",
-        "description": "<div>Adjacent allied characters can use the Duck for hard cover.</div>"
-      }
-    ],
-    "core_system": {
-      "name": "CITADEL",
-      "active_name": "CITADEL PROTOCOL",
-      "active_effect": "<p>You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:</p><ul><li><p>You become Immobilized.</p></li><li><p>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</p></li><li><p>When you Brace, you may take a full action on your next turn instead of just a quick action.</p></li><li><p>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</p></li></ul><p>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.</p>",
-      "activation": "",
-      "description": "",
-      "deactivation": "",
       "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/826193813550530661/1143262490696896613/Retrograde-Minis-Homebrew-MFR-HA-LOZA_1.png",
-    "y_pos": 0
-  },
-  {
-    "id": "FNET_frames_trooper",
-    "license_id": "FNET_frames_trooper",
-    "source": "FN_",
-    "license_level": 2,
-    "name": "Trooper",
-    "mechtype": [
-      "Defender"
-    ],
-    "variant": "",
-    "description": "<div>The Trooper, FNET's second foray into custom build military-grade mech design, is the backbone of many proactive security or PMC forces.<br><br>Its massive, humaniod frame is built around a repurposed and reinforced tank hull to handle sustained fire and the vagaries of vessel-proximal hardvac travel.<br><br>The Trooper is a imposing chassis, its frame evoking the might of ancient armored vehicles from a time when greater numbers guaranteed victory.<br><br>The standard issue license for the FNET Trooper outfits each chassis with a FNET Energy cannon for devestating targets, a ERA heavy explosive shield for defense.</div>",
-    "mounts": [
-      "Main",
-      "Main",
-      "Heavy"
-    ],
-    "stats": {
-      "size": 2,
-      "structure": 4,
-      "stress": 4,
-      "armor": 3,
-      "hp": 10,
-      "evasion": 5,
-      "edef": 5,
-      "heatcap": 5,
-      "repcap": 5,
-      "sensor_range": 10,
-      "tech_attack": 0,
-      "save": 10,
-      "speed": 3,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "HEAVY FRAME",
-        "use": "",
-        "description": "<div>The Duck cannot be pushed, pulled, knocked prone, or knocked back by smaller characters</div>"
-      },
-      {
-        "name": "ERA PLATING",
-        "use": "",
-        "description": "<div>The Duck has Resistance to damage, burn and heat from blast, burst, line, and cone attacks.</div>"
-      },
-      {
-        "name": "FAT",
-        "use": "",
-        "description": "<div>The Duck is fat, receiving a +1 difficulty on Agility checks and saves</div>"
-      },
-      {
-        "name": "PROTECTOR",
-        "use": "",
-        "description": "<div>Adjacent allied characters can use the Duck for hard cover.</div>"
-      }
-    ],
-    "core_system": {
-      "name": "CITADEL",
-      "active_name": "CITADEL PROTOCOL",
-      "active_effect": "<p>You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:</p><ul><li><p>You become Immobilized.</p></li><li><p>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</p></li><li><p>When you Brace, you may take a full action on your next turn instead of just a quick action.</p></li><li><p>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</p></li></ul><p>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.</p>",
-      "activation": "",
-      "description": "",
-      "deactivation": "",
-      "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/826193813550530661/1143261794215923855/Retrograde-Minis-Retrograde-SCORPI-O.png",
-    "y_pos": 0
-  },
-  {
-    "id": "KM LCT",
-    "license_id": "KM LCT",
-    "source": "KM",
-    "license_level": 2,
-    "name": "Lancelot Artillery",
-    "mechtype": [
-      "Artillery"
-    ],
-    "variant": "",
-    "description": "",
-    "mounts": [
-      "Heavy",
-      "Heavy",
-      "Main/Aux"
-    ],
-    "stats": {
-      "size": 3,
-      "structure": 4,
-      "stress": 4,
-      "armor": 0,
-      "hp": 10,
-      "evasion": 6,
-      "edef": 6,
-      "heatcap": 6,
-      "repcap": 6,
-      "sensor_range": 10,
-      "tech_attack": 0,
-      "save": 12,
-      "speed": 4,
-      "sp": 6
-    },
-    "traits": [],
-    "core_system": {
-      "name": "Activate artillery systems",
-      "active_name": "Activate Artillery System",
-      "active_effect": "<p>Upon activation - lowers evasion by 2 but increases range for all weapons by 2</p>",
-      "activation": "Protocol",
-      "description": "<p>ACTIVATES ONBOARD STABILIZERS, ALLOWING FOR A INCREASE OF RANGE AT THE SACRIFICE OF EVASION</p>",
-      "deactivation": "",
-      "use": "Turn",
       "active_actions": [],
       "active_bonuses": [
         {
           "id": "evasion",
-          "val": -2,
-          "damage_types": [],
-          "range_types": [],
-          "weapon_types": [],
-          "weapon_sizes": [],
-          "overwrite": false,
-          "replace": false
-        },
-        {
-          "id": "range",
           "val": 2,
           "damage_types": [],
           "range_types": [],
@@ -298,297 +51,38 @@
           "weapon_sizes": [],
           "overwrite": false,
           "replace": false
-        }
-      ],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "",
-    "y_pos": 0
-  },
-  {
-    "id": "KM_EXA",
-    "license_id": "KM_EXA",
-    "source": "KM",
-    "license_level": 2,
-    "name": "Experimental Artillery",
-    "mechtype": [
-      "Artillery"
-    ],
-    "variant": "",
-    "description": "",
-    "mounts": [
-      "Heavy",
-      "Heavy",
-      "Main/Aux",
-      "Main/Aux"
-    ],
-    "stats": {
-      "size": 4,
-      "structure": 7,
-      "stress": 4,
-      "armor": 4,
-      "hp": 14,
-      "evasion": 6,
-      "edef": 6,
-      "heatcap": 4,
-      "repcap": 6,
-      "sensor_range": 10,
-      "tech_attack": 0,
-      "save": 12,
-      "speed": 4,
-      "sp": 6
-    },
-    "traits": [],
-    "core_system": {
-      "name": "Heat Vents",
-      "active_name": "",
-      "active_effect": "",
-      "activation": "",
-      "description": "<p>Upon activation, reduces heat by 2, can only be done once per mission</p>",
-      "deactivation": "",
-      "use": "",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": [
-        {
-          "id": "tg_heat_self",
-          "name": "HEAT {VAL} (SELF)",
-          "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
-          "val": -2
         },
         {
-          "id": "tg_set_max_uses",
-          "name": "SET MAX USES",
-          "description": "Allow player to set the maximum uses for this equipment (HIDDEN TAG)",
-          "hidden": true,
-          "val": 1
-        }
-      ]
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/1141829553254310058/1148636592152518766/image.png",
-    "y_pos": 0
-  },
-  {
-    "id": "FN_M",
-    "license_id": "FN_M",
-    "source": "FN_",
-    "license_level": 2,
-    "name": "Mosquito",
-    "mechtype": [
-      "Support"
-    ],
-    "variant": "",
-    "description": "",
-    "mounts": [
-      "Main",
-      "Main",
-      "Heavy"
-    ],
-    "stats": {
-      "size": 3,
-      "structure": 4,
-      "stress": 4,
-      "armor": 0,
-      "hp": 6,
-      "evasion": 10,
-      "edef": 10,
-      "heatcap": 4,
-      "repcap": 5,
-      "sensor_range": 20,
-      "tech_attack": 1,
-      "save": 10,
-      "speed": 6,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "INTEGRATED CLOAK",
-        "use": "",
-        "description": "<div>At the end of its turn, the Mosquito becomes Invisible if it hasn’t moved that turn. This lasts until it moves or takes a reaction, or until the start of its next turn.</div>"
-      },
-      {
-        "name": "BY THE WAY, I KNOW EVERYTHING",
-        "use": "",
-        "description": "<div>When it would roll damage, the Mosquito can instead deal the average damage based on the number of dice rolled, as follows: 1d3 (2), 1d6 (4), 2d6 (7), 3d6 (11), 4d6 (14). This must be decided before rolling damage.</div>"
-      }
-    ],
-    "core_system": {
-      "name": "USHABTI OMNIGUN",
-      "active_name": "UNSHACKLE USHABTI",
-      "active_effect": "<p>For the rest of this scene, you can use the Ushabti Omnigun 3/round, instead of 1/round.</p>",
-      "activation": "Protocol",
-      "description": "<p>“– funny thing. See, right now, this weapon technically doesn’t even exist. You’re shooting them with a gun that isn’t real, and yet it is! Don’t worry about it. RA’s like that. Just, here, know that because it exists at some point, we’ve made it. That’s causality, and causality is a –\"</p>",
-      "deactivation": "",
-      "use": "",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "USHABTI OMNIGUN",
-      "passive_effect": "<p>[range 15][1 AP Kinetic Damage]<br>Your mech’s omnigun is a piece of experimental hardware so advanced that it defies physics: it doesn’t require a mount, nor does it have a weapon type or size – meaning that it can’t be modified or benefit from your talents.<br>You can’t attack normally with this weapon. Instead, 1/round, as a free action during your turn, you can use it to deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule in this book or any other supersedes this.</p>",
-      "passive_actions": [
+          "id": "speed",
+          "val": 2,
+          "damage_types": [],
+          "range_types": [],
+          "weapon_types": [],
+          "weapon_sizes": [],
+          "overwrite": false,
+          "replace": false
+        },
         {
-          "name": "FIRE OMNIGUN",
-          "activation": "Free",
-          "detail": "<p>1/round, as a free action during your turn, deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule supersedes this.</p>",
-          "cost": 0,
-          "pilot": false,
-          "damage": [
-            {
-              "type": "Kinetic",
-              "val": 1
-            }
-          ],
-          "range": [
-            {
-              "type": "Range",
-              "val": 15
-            }
-          ],
-          "synergy_locations": [],
-          "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "id": "edef",
+          "val": 2,
+          "damage_types": [],
+          "range_types": [],
+          "weapon_types": [],
+          "weapon_sizes": [],
+          "overwrite": false,
+          "replace": false
+        },
+        {
+          "id": "sensor",
+          "val": 5,
+          "damage_types": [],
+          "range_types": [],
+          "weapon_types": [],
+          "weapon_sizes": [],
+          "overwrite": false,
+          "replace": false
         }
       ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/1143159714075656222/1151239121260527677/Mosquito.png",
-    "y_pos": 0
-  },
-  {
-    "id": "GES_PNGF",
-    "license_id": "GES_PNGF",
-    "source": "GES",
-    "license_level": 2,
-    "name": "Pangolin Frame",
-    "mechtype": [
-      "Defender"
-    ],
-    "variant": "",
-    "description": "<div>The Pangolin frame is a size 2 Experimental GES chassis,The Pangolin is based on the Sagarmatha frame, more sturdier then its ancient counterpart, but slower in return.</div>",
-    "mounts": [
-      "Heavy",
-      "Main",
-      "Flex"
-    ],
-    "stats": {
-      "size": 2,
-      "structure": 4,
-      "stress": 4,
-      "armor": 1,
-      "hp": 10,
-      "evasion": 8,
-      "edef": 8,
-      "heatcap": 6,
-      "repcap": 4,
-      "sensor_range": 10,
-      "tech_attack": 0,
-      "save": 10,
-      "speed": 3,
-      "sp": 6
-    },
-    "traits": [],
-    "core_system": {
-      "name": "Plasma Puddle",
-      "active_name": "Let lose, the juice",
-      "active_effect": "<p>Causes the Pangolin to shoot out Plasma from it's onboard storage tank, creating a area around it (circular 2 wide), entering this area will cause 1 burn damage per turn to the mech who entered it.</p>",
-      "activation": "Quick",
-      "description": "",
-      "deactivation": "",
-      "use": "",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/1141829553254310058/1153041940556808394/Retrograde-Minis-GMS.png",
-    "y_pos": 0
-  },
-  {
-    "id": "KM_J",
-    "license_id": "KM_J",
-    "source": "KM",
-    "license_level": 2,
-    "name": "HL-CSF \"AUS\"",
-    "mechtype": [
-      "Balanced"
-    ],
-    "variant": "",
-    "description": "<div>A Experimental frame kept in utmost secrecy and spread out in several data sheets across the [DATA EXPUNGED] Data vaults, access has only been granted to the [DATA EXPUNGED] In the year [DATA EXPUNGED] The [DATA EXPUNGED] were ordered to construct a new high mobility frame to combat [DATA EXPUNGED] This process took several long years with many sacrifices and drawbacks, but in the Year [DATA EXPUNGED] The frame was finished, but due to extreme costs the Frame was only used in Support missions, escort missions, Recon and Protection of VIP's and was rarely seen in direct combat. Due to the scientists and engineers combined effort they have tried to devlop as many advanced technologies as they could for the frame, thus giving it excellent radar range and hacking abilites but ending up severely lacking in armor and durability, rendering the frame somewhat unfit for combat It has also been proven that the frame's viability increases in space due to its advanced thrusters allowing it to outperform the enemy lancer's of [DATA EXPUNGED]</div>",
-    "mounts": [
-      "Heavy",
-      "Flex",
-      "Main/Aux"
-    ],
-    "stats": {
-      "size": 1,
-      "structure": 4,
-      "stress": 5,
-      "armor": 0,
-      "hp": 12,
-      "evasion": 9,
-      "edef": 12,
-      "heatcap": 6,
-      "repcap": 6,
-      "sensor_range": 15,
-      "tech_attack": 1,
-      "save": 9,
-      "speed": 5,
-      "sp": 7
-    },
-    "traits": [
-      {
-        "name": "Mobility Accelerator",
-        "use": "",
-        "description": "<div>When the AUS clears all heat, you may choose to receive heat equal to half its Heat Cap, putting it in the Danger Zone,but in turn you may take two quick actions as a free actions.</div>"
-      }
-    ],
-    "core_system": {
-      "name": " Assault pulse",
-      "active_name": "Activate Assault pulse",
-      "active_effect": "<p>Upon activation, sends out a Blast 3 from the Frames location, anyone caught in the blast loses 2 stress units.</p>",
-      "activation": "",
-      "description": "<p>Upon activation, sends out a Blast 3 from the Frames location, anyone caught in the blast loses 2 stress units.</p>",
-      "deactivation": "",
-      "use": "",
-      "active_actions": [],
-      "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "",
       "passive_effect": "",
@@ -600,16 +94,9 @@
       "integrated": [],
       "special_equipment": [],
       "tags": [
-        {
-          "id": "tg_blast",
-          "name": "BLAST {VAL}",
-          "description": "Attacks made with this weapon affect characters within a radius of {VAL} spaces, drawn from a point within Range and line of sight. Cover and line of sight are calculated based on the center of the blast, rather than the attacker’s position.",
-          "filter_ignore": true,
-          "val": 3
-        }
       ]
     },
-    "image_url": "https://cdn.discordapp.com/attachments/672905226155458576/1153753940328984636/HL-CSF.png",
+    "image_url": "",
     "y_pos": 0
   }
 ]

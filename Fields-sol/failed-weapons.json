@@ -1,0 +1,313 @@
+[
+  {
+    "id": "BA_Angrvall",
+    "name": "Angrvall",
+    "source": "BA",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Charge Rail: 6",
+        "damage": [
+          {
+            "override": true,
+            "val": "N/A"
+          }
+        ],
+        "range": [
+          {
+            "override": true,
+            "type": "Range",
+            "val": "N/A"
+          }
+        ],
+        "effect": "Cannot Be Fired"
+      },
+     {
+        "name": "Charge Rail: 5",
+        "range": [
+          {
+            "type": "Range",
+            "val": 20
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "effect": "The Angrvall roars to life, readying itself to unleash it's wrath. - Firing now will deliver 1d6 kinetic damage."
+      },
+      {
+        "name": "Charge Rail: 4",
+
+        "range": [
+          {
+            "type": "Range",
+            "val": 30
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6"
+          }
+        ],
+        "effect": "The Angrvall roars once more as it's turbine starts to spin up the spear, the spear tip hardens with Floatine. - Firing now will deliver 2d6 kinetic damage with 10 AP"
+      },
+      {
+        "name": "Charge Rail: 3",
+        "range": [
+          {
+            "type": "Range",
+            "val": 40
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "3d6"
+          }
+        ],
+        "effect": "Sparks fly out of the Angrvall launcher, a soft green glow emits from the tip of the spear. - Firing now will deliver 3d6 Kinetic damage with 20 AP and blast 2"
+      },
+      {
+        "name": "Charge Rail: 2",
+        "range": [
+          {
+            "type": "Range",
+            "val": 60
+          },
+          {
+            "type": "Blast",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "4d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_heat_self",
+            "val": 1
+          }
+        ],
+        "effect": "Heat emits from the Angrvall Launcher, the launcher spins rapidly. - Firing now will deliver 4d6 explosive damage in addition to 30 AP and blast 3"
+      },
+      {
+        "name": "Charge Rail: 1",
+        "range": [
+          {
+            "type": "Range",
+            "val": 80
+          },
+          {
+            "type": "Blast",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "5d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_heat_self",
+            "val": 3
+          }
+        ],
+        "effect": "The Angrvall starts to creak as it buckles under the heat, you aren't sure if it would be smart to overcharge it... - Firing now will deliver 5d6 explosive damage in addition to 40 AP"
+      },
+      {
+        "name": "Charge Rail: Angrvadall",
+        "range": [
+          {
+            "type": "Range",
+            "val": 100
+          },
+          {
+            "type": "Blast",
+            "val": 4
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "6d6"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_heat_self",
+            "val": 5
+          }
+        ],
+        "effect": "The spear is ready, the weapon feared by the Union, is primed once more, unleash the Angrvadall upon your foes! - Firing now will deliver a deadly blow of 6d6 in addition to AP 100 and blast 4"
+      }
+    ],
+        "tags": [
+          {
+            "id": "tg_loading",
+            "name": "Loading",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          }
+	],
+	"counters": [
+	{
+	    "id": "ctr_angrvall",
+	    "name": "Angrvall Die",
+	    "default_value": 7,
+	    "min": 1,
+	    "max": 7
+	}
+	]
+  },
+    {
+    "id": "KM_HLBC",
+    "name": "Holy Light Beam cannon",
+    "source": "KMC",
+    "license": "Galahad Mental Frame",
+    "license_id": "KMC_Frames_Galahad",
+    "license_level": 3,
+    "description": "<div>The Holy Light Beam Cannon - otherwise known as Holy light or HLBC, is a testament to Knights Manufacturing's ambition, presenting the pinnacle of the limited energy weapon development KM has performed.<br>Going with the trend of old Cradle Arthurian legends, the HLBC is mean to inspire awe, fear and evoke the image of divine retribution.</div><div>The charging sequence of the HLBC is a spectacle on its own, as energy seemingly comes out of nowhere (while in reality it is being released through tiny spikes on the capacitor units), quickly filling the firing chamber with a shining, golden light, adding to the sense of imagery of a divine weapon.</div><div>Once a weapon that was often used to protect the population of KM factory worlds, now has become twisted, used by Fields Network to perform deeds beyond reasoning.</div>",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "",
+        "barrage": true,
+        "skirmish": false,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "3d6"
+          },
+          {
+            "type": "Burn",
+            "val": 5
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_loading",
+            "name": "Loading",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_inaccurate",
+            "name": "Inaccurate",
+            "description": "Attacks made with this weapon receive +1 Difficulty."
+          },
+          {
+            "id": "tg_ordnance",
+            "name": "Ordnance",
+            "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "Heat {VAL} (Self)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "KM_Armsman",
+    "name": "Armsman",
+    "source": "KMC",
+    "license": "Galahad Mental Frame",
+    "license_id": "KMC_Frames_Galahad",
+    "license_level": 1,
+    "description": "<div>The armsman is a compact, semi-automatic pistol designed for close-to-medium range engagements. Its polymer frame keeps it lightweight and maneuverable, while its reinforced barrel and slide ensure durability even under heavy use. The Armsman's integrated targeting system aids in acquiring and tracking targets, making it a reliable choice for pilots who need accurate firepower in a pinch.</div><div></div>",
+    "mount": "Main",
+    "type": "CQB",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "",
+        "barrage": true,
+        "skirmish": true,
+        "on_crit": "<div>On a critical hit, the inflict the Staggered debuff on the target.</div>",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "KMC_SPS",
+    "name": "Secace Power Sword",
+    "source": "KMC",
+    "license": "Galahad Mental Frame",
+    "license_id": "KMC_Frames_Galahad",
+    "license_level": 1,
+    "description": "",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "",
+        "barrage": true,
+        "skirmish": true,
+        "on_crit": "<div>On a Critical Hit take +2 heat to self to inflict STUNNED to target.</div>",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -6,8 +6,8 @@
         "type": "Cannon",
         "damage": [
             {
-                "type": "Kinetic",
-                "val": "1d6+4"
+                "type": "Energy",
+                "val": "3d6"
             },
             {
                 "type": "Burn",
